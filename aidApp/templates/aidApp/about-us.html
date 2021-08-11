@@ -1,0 +1,418 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- <head> -->
+
+<!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet"> -->
+
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="images/about-us-images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/about-us-images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/about-us-images/favicon-16x16.png">
+    <link href="https://fonts.google.com/specimen/Lexend+Deca" rel="stylesheet">
+   
+    <link rel="manifest" href="images/about-us-images/site.webmanifest">  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+
+
+
+<!-- <head> -->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'aidApp/css/about-us.css' %}">
+
+    <link href="https://fonts.google.com/specimen/Lexend+Deca" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+
+    <title>About Us</title>
+
+    <link rel="icon" href="{% static 'aidApp/images/FAQ-images/Group.svg' %}">
+
+
+
+</head>
+
+<body>
+
+    <!-- <header class="topnav"> -->
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}" role="alert">{{ message }}</div>
+    {% endfor %}
+    {% endif %}
+
+    <header>
+        <div class="logo">
+            <img src="{% static 'aidApp/images/FAQ-images/Group.svg' %}">
+            <h2>Empr Medical</h2>
+        </div>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="{% url 'homepage' %}">Home</a>
+                    <a href="{% url 'about-us' %}" class="selected">About Us</a>
+                    <a href="{% url 'faq' %}">FAQ</a>
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'sign-up' %}">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="no-dropdown">
+            <a href="{% url 'homepage' %}">Home</a>
+            <a href="{% url 'about-us' %}" class="selected">About Us</a>
+            <a href="{% url 'faq' %}">FAQ</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'sign-up' %}">Sign Up</a>
+
+        </div>
+
+        <!-- <div class="logo">
+                <img src="images/about-us-images/logo.svg">
+                <h2>Empr Medical</h2>
+            </div>
+            <nav class="navbar" id="myLinks">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html" class="selected">About Us</a>
+                    <a href="Faq.html">FAQ</a>
+                    <a href="login.html">Login</a>
+                    <a href="registration.html">Sign Up</a>
+            </nav> -->
+
+    </header>
+
+
+
+
+
+
+
+    <div class="header-container">
+
+
+
+        <div class="about-content">
+
+            <h1 class="about-content" id="empr-medical-title">About Empr Medical</h1>
+
+            <p class="about-content" id="collapse">
+
+                Empr Medical ‘s mission is to provide high-quality clinical patient care to the people of Louisiana,
+                Mississippi, and Texas. Established in 2019, our healthcare locations are comprised of than 500
+                employees and 1,000 providers in over 90 medical specialties and subspecialties. We are driven by our
+                commitment to our mission to Serve, Heal, Lead, Educate, and Innovate modern healthcare systems in the
+                US and beyond.
+
+            </p>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <main>
+
+        <div class="mission-statement" id="our-mission">
+
+            <h2 class="mission-statement" id="mission-header">Our Mission</h2>
+
+            <p class="mission-statement">
+
+                “Empr Medical‘s mission is to provide high-quality clinical patient <br>
+
+                care to the people of Louisiana, Mississippi, and Texas.“
+
+            </p>
+
+
+
+        </div>
+
+        <div class="sv" id="services">
+
+            <h2 id="services-heading">Services</h2>
+
+            <!-- <div id="img-text"> -->
+
+            <ul class="services-container">
+
+                <li class="services-flex">
+
+                    <img class="service-img"
+                        src="{% static 'aidApp/images/about-us-images/primary-care-services.png' %}"
+                        alt="care service office lobby"><br>
+
+                    <a href="#" class="services-link" id="pcs"><span id="wrap-text">Primary Care Services</span></a>
+
+                </li>
+
+                <li class="services-flex">
+
+                    <img class="service-img" src="{% static 'aidApp/images/about-us-images/Dentistry.png' %}"
+                        alt="Dentist x-ray"><br>
+
+                    <a href="#" class="services-link" id="dy">Dentistry</a>
+
+                </li>
+
+                <li class="services-flex">
+
+                    <img class="service-img" src="{% static 'aidApp/images/about-us-images/Pediactrics.png' %}"
+                        alt="Pediatrics"><br>
+
+                    <a href="#" class="services-link" id="ps">Pediatrics</a>
+
+                </li>
+
+            </ul>
+
+            <!-- </div>                 -->
+
+        </div>
+
+        <div class="sv" id="values">
+
+            <h2 id="valuesh2">Values</h2>
+
+            <div id="values-and-images">
+
+                <img src="{% static 'aidApp/images/about-us-images/logo.svg' %}" alt="Logo" id="value-logo">
+
+                <ul class="list-values">
+
+                    <li class="list-values" id="value-1">We Bring Heart and Soul</li>
+
+                    <li class="list-values">We're in it together</li>
+
+                    <li class="list-values">We give a little extra</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="founder-container">
+
+            <h2 id="h2founder">Our Founder</h2>
+
+            <div class="our-founder">
+
+                <img src="{% static 'aidApp/images/about-us-images/founder.png' %}" alt="Founder-image"
+                    class="our-founder" id="founder-img">
+
+                <p class="our-founder">
+
+                    Founded in 2015, Dr. Beverly James belived in her vision to create a health care brand that empowers
+                    patients to take the lead in their health care needs. Read more about Dr. James story here.
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="our-team-container">
+
+            <h2 class="our-team">Our Team</h2>
+
+            <div class="our-team">
+
+                <p class="our-team">
+
+                    With a team over 1000 employees, we take pride in our ever growing family and love to see new faces.
+                    Join our team now!
+
+                </p>
+
+                <img src="{% static 'aidApp/images/about-us-images/our-team.png' %}" alt="Team-members"
+                    id="our-team-img">
+
+            </div>
+
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="Newsletter">
+
+                <h2 class="Newsletter">Subscribe to our <span id="underline">
+                        <h2 id="news-letter">Newsletter!</h2>
+                    </span></h2>
+
+                <div class="Newsletter" id="email-sign-up">
+
+                    <input class="user-input" type="text" placeholder="Enter Name" name="name" required><br>
+
+                    <input class="user-input" type="text" placeholder="Enter Email" name="email" required><br>
+
+                    <button id="sign-up-btn" name="newsletter">Sign Up</button>
+
+                </div>
+
+            </div>
+        </form>
+
+
+    </main>
+
+    <!--</div>-->
+
+    <section class="section-bottom">
+
+
+
+        <div class="logo">
+
+            <img class="empr-logo" src="{% static 'aidApp/images/FAQ-images/Group.svg' %}">
+
+            <h3 class="empr-medical">Empr Medical </h3>
+
+        </div>
+
+        <div>
+
+            <p>Schedule An Appointment: <br><b>1-555-555-1111</b></p>
+
+        </div>
+
+
+
+
+
+        <div class="last">
+
+            <p class="follow-us">Follow us:</p>
+
+            <a href="#"><i class="fab fab fa-twitter" style="color: #009578;"></i></i></a>
+
+            <a href="#"><i class="fab fab fa-instagram" style="color: #009578;"></i></i></a>
+
+            <a href="#"><i class="fab fa-facebook" style="color: #009578;"></i></i></a>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer>
+
+        <div class="footer1">
+
+            <img src="{% static 'aidApp/images/FAQ-images/Group.svg' %}">
+
+            <h3>Empr Medical</h3>
+
+            <p>200 1st Ave<br>New Orleans, LA 70124</p>
+
+            <p>Site Map</p>
+
+            <p>Copyright 2021 <span>Disclaimer</span></p>
+
+        </div>
+
+
+
+        <div class="footer2">
+
+            <a href="% url 'about-us' %}" id="footer-links">About Us</a><br>
+
+            <a href="{% url 'homepage' %}" id="footer-links">Patient Portal</a><br>
+
+            <a href="{% url 'homepage' %}" id="footer-links">News Room</a><br>
+
+            <a href="{% url 'homepage' %}" id="footer-links">Find A Provider</a><br>
+
+
+
+        </div>
+
+
+
+        <div class="footer3">
+
+
+
+            <a href="{% url 'homepage' %}" id="footer-links">Empr Medical Health Care</a><br>
+
+            <a href="{% url 'homepage' %}" id="footer-links">Contact Us</a><br>
+
+            <a href="{% url 'homepage' %}" id="footer-links">Locations</a><br>
+
+            <a href="{% url 'homepage' %}" id="footer-links">Careers</a>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="footer4">
+
+            <a href="index.html" id="footer-links">Notice of Privacy</a>
+
+
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="{% static 'aidApp/js/about-us.js'%}"></script>
+
+</body>
+
+</html>

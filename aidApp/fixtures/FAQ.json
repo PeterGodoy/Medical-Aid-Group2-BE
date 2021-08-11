@@ -1,0 +1,42 @@
+[
+    {
+        "model": "aidApp.FAQ",
+        "pk": 1,
+        "fields": {
+            "question": "Is there any cost to me for medical services?",
+            "answer": "Most Medical aid users have small copayments for some services"
+        }
+    },
+    {
+        "model": "aidApp.FAQ",
+        "pk": 2,
+        "fields": {
+            "question": "Who has access to my medical aid information?",
+            "answer": "The person's information is confidential and can only be shared with people whose work involves running the Medical Aid programs"
+        }
+    },
+    {
+        "model": "aidApp.FAQ",
+        "pk": 3,
+        "fields":{
+            "question": "How can I find a doctor or other provider  with Medical aid?",
+            "answer": " Medical aid app allows you to search for providers and other Medical Assistance."
+        }
+    },
+    {
+        "model": "aidApp.FAQ",
+        "pk": 4,
+        "fields": {
+            "question": "How can I order a new Medical Assistance Card?",
+            "answer": "You can apply for it in the site"
+        }
+    },
+    {
+        "model": "aidApp.FAQ",
+        "pk": 5,
+        "fields": {
+            "question": "What changes do I need to report? ",
+            "answer": "Change of address and Family member moving into or out of your home "
+        }
+    }
+]

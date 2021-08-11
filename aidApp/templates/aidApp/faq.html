@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'aidApp/css/faq.css' %}">
+        <link href="https://fonts.google.com/specimen/Lexend+Deca" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" />
+
+        <title>FAQ</title>
+        <link rel="icon" href="images/FAQ-images/Group.svg">
+
+    </head>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+ 
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="index.html">Services</a>
+                <a href="index.html">Careers</a>
+                <a href="FAQ.html" class="selected">FAQ</a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="logo">
+            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.536 16.3691C15.536 16.3691 4.93523 10.2086 4.93523 6.19093C4.93523 -0.148077 12.8858 -1.84443 15.536 2.26253C18.1862 -1.84443 26.1368 -0.148077 26.1368 6.19093C26.1368 10.2086 15.536 16.3691 15.536 16.3691ZM0.0274674 11.28L1.59795 19.4046C1.69611 19.851 1.89242 20.476 2.48135 20.9224C3.65921 21.726 8.17435 24.583 8.17435 26.1901V28.2435H14.5544L14.4563 20.5653C14.4563 20.0296 14.3581 19.6725 12.984 19.1368L6.70202 16.5476C5.13154 15.9226 4.05183 18.0654 5.62232 18.6904L10.9227 20.8331C11.2172 20.9224 11.119 21.3688 10.7264 21.2796L4.83707 18.8689C4.14999 18.6011 4.24814 18.4225 4.05183 17.8868L2.38319 11.1014C1.89242 9.49436 -0.266998 9.85148 0.0274674 11.28ZM31.0445 11.28L29.3759 19.4046C29.3759 19.851 29.1796 20.476 28.4925 20.9224C27.3146 21.726 22.8976 24.583 22.8976 26.1901V28.2435H16.5175V20.5653C16.5175 20.0296 16.6157 19.6725 17.9899 19.1368L24.37 16.5476C25.9405 15.9226 26.922 18.0654 25.3515 18.6904L20.0511 20.8331C19.7567 20.9224 19.8548 21.3688 20.2474 21.2796L26.1368 18.8689C26.8239 18.6011 26.8239 18.4225 26.922 17.8868L28.6888 11.1014C29.0814 9.49436 31.2408 9.85148 31.0445 11.28ZM14.0637 3.8696H16.9102V6.90518H20.2474V9.49436H16.9102V12.4407H14.0637V9.49436H10.8245V6.90518H14.0637V3.8696Z" fill="url(#paint0_linear)"/>
+                <defs>
+                <linearGradient id="paint0_linear" x1="23.8857" y1="0.0283213" x2="2.28101" y2="29.5692" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#22AB30"/>
+                <stop offset="1" stop-color="#18ACCC"/>
+                </linearGradient>
+                </defs>
+                </svg>
+            <h2>Empr Medical</h2>
+         </div>
+
+
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="index.html">Services</a>
+                    <a href="index.html">Careers</a>
+                    <a href="FAQ.html" class="selected">FAQ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="images/FAQ-images/Group.svg">
+            <h2>Empr Medical</h2>
+        </div>
+
+        <div class="no-dropdown">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="index.html">Services</a>
+            <a href="index.html">Careers</a>
+            <a href="FAQ.html" class="selected">FAQ</a>
+        </div>
+
+
+
+    </header <!-- open up svg file and change stroke="black" to stroke="transparent" , Control-S, this removes border-->
+    <div class="container-docimage">
+        <div class="textover-image">
+            <h1>Frequently Asked Questions</h1>
+            <p>Need Assistance? Select one of our frequently asked questions below or for additonal guidance contact our
+                support team
+                <a href="#" id="here">here</a>.
+            </p>
+        </div>
+
+        <div class="doctor-image">
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="search-box">
+        <input class="input-field" type="search" name="searchbox">
+        <i class="fas fa-search"></i>
+    </div>
+    </div>
+
+
+    <div class="accordion">
+        <!-- <img src="./images/FAQ-images/Rectangle 800.png" alt="" class="squaretop-left">
+            <img src="./images/FAQ-images/Rectangle 801.png" alt="" class="squareone-right">
+            <img src="./images/FAQ-images/Rectangle 802.png" alt="" class="squaretwo-right"> -->
+
+
+
+
+
+        {% for faq in faqs %}
+        <div>
+            <input type="radio" name="example_accordion" id="section2" class="accordion__input">
+            <label for="section2" class="accordion__label">
+                <h3>{{faq.question}}</h3>
+            </label>
+            <div class="accordion__content">
+                <p>{{faq.answer}}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+
+        <!--     
+            <img src="./images/FAQ-images/Rectangle 799.png" alt="" class="squareone-left">
+            <img src="./images/FAQ-images/Rectangle 798.png" alt="" class="squaretwo-left"> -->
+
+    </div>
+
+    <section class="section-bottom">
+
+
+        <div class="logo">
+            <img class="empr-logo" src="/images/FAQ-images/Group.svg">
+            <h3 class="empr-medical">Empr Medical </h3>
+        </div>
+
+        <p>Schedule An Appointment: <b>1-555-555-1111</b></p>
+
+        <div class="last">
+            <p class="follow-us">Follow us:</p>
+            <a href="#"><i class="fab fab fa-twitter" style="color: #009578;"></i></i></a>
+            <a href="#"><i class="fab fab fa-instagram" style="color: #009578;"></i></i></a>
+            <a href="#"><i class="fab fa-facebook" style="color: #009578;"></i></i></a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer1">
+            <svg width="102" height="97" viewBox="0 0 102 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="1.2627" width="100.814" height="95.294" rx="30" transform="rotate(-0.717582 0 1.2627)" fill="#F9F9F9"/>
+                <rect y="1.2627" width="100.814" height="95.294" rx="30" transform="rotate(-0.717582 0 1.2627)" fill="#00C5B4" fill-opacity="0.22"/>
+                </svg>
+            <h3>Empr Medical</h3>
+            <p>200 1st Ave<br>New Orleans, LA 70124</p>
+            <p>Site Map</p>
+            <p>Copyright 2021 <span>Disclaimer</span></p>
+        </div>
+
+        <div class="footer2">
+            <a href="about-us.html" id="footer-links">About Us</a><br>
+            <a href="index.html" id="footer-links">Patient Portal</a><br>
+            <a href="index.html" id="footer-links">News Room</a><br>
+            <a href="index.html" id="footer-links">Find A Provider</a><br>
+
+        </div>
+
+        <div class="footer3">
+
+            <a href="index.html" id="footer-links">Empr Medical Health Care</a><br>
+            <a href="index.html" id="footer-links">Contact Us</a><br>
+            <a href="index.html" id="footer-links">Locations</a><br>
+            <a href="index.html" id="footer-links">Careers</a>
+
+        </div>
+
+
+
+        <div class="footer4">
+            <a href="index.html" id="footer-links">Notice of Privacy</a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
+
+<html>
+
+<body>
+
+</body>
+
+</html>
